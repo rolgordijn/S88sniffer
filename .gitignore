@@ -1,0 +1,22 @@
+# Arduino build output
+*.ino.cpp
+*.elf
+*.bin
+*.hex
+*.o
+
+# KiCad: backups/temps/plots
+*-backups/
+*.kicad_prl
+*.tmp
+*.bak
+*.bck
+*.000
+fabrication/
+outputs/
+plots/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+~$*

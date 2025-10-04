@@ -1,0 +1,36 @@
+# KiCad 6/7/8 project files die je WEL wil committen:
+# *.kicad_pro, *.kicad_sch, *.kicad_pcb, *.kicad_sym, footprints (.pretty/*), 3D (kan groot zijn)
+
+# Backups / autosaves
+*-backups/
+*.kicad_prl
+*.tmp
+*.bak
+*.bck
+*.000
+*.dcm
+
+# Gerbers & fab output (genereer opnieuw of zet in releases)
+*.gbr
+*.gtl
+*.gbl
+*.gts
+*.gbs
+*.gto
+*.gbo
+*.drl
+*.pos
+*.csv
+*.zip
+fabrication/
+outputs/
+plots/
+
+# Cache (KiCad v5)
+*-cache.lib
+# Netlists
+*.net
+# OS/Editor
+.DS_Store
+Thumbs.db
+~$*
