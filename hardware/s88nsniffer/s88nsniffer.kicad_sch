@@ -3959,6 +3959,26 @@
 		)
 		(uuid "17a6150b-fa17-47b1-b785-aaf786b288ac")
 	)
+	(text "\nWeidmuller \n1455240000\n"
+		(exclude_from_sim no)
+		(at 22.098 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "51cc6dcd-1c71-40ed-b6cf-81a08cc78b07")
+	)
+	(text "\nWeidmuller \n1455240000\n"
+		(exclude_from_sim no)
+		(at 98.806 58.674 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a8462802-4e0a-4cd7-be6b-08cfa687c1f6")
+	)
 	(text "A6 AND A7 CAN ONLY BE \nUSED AS ANALOG INPUT ON NANO V3"
 		(exclude_from_sim no)
 		(at 208.534 119.634 0)
@@ -5240,7 +5260,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "03678b28-cf94-4e30-82c2-eb7882816d3c")
 		(property "Reference" "J103"
 			(at 275.59 92.7099 0)
@@ -5251,8 +5270,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x09_Pin"
-			(at 275.59 95.2499 0)
+		(property "Value" "B9B-PH-K-S"
+			(at 261.112 105.918 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5395,7 +5414,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0af41584-7cc2-4e77-9da3-132e1fd006a0")
 		(property "Reference" "J101"
 			(at 21.59 38.1 0)
@@ -5405,8 +5423,8 @@
 				)
 			)
 		)
-		(property "Value" "RJ45"
-			(at 21.59 40.64 0)
+		(property "Value" "RJ45C5 T1U 2.8N4N TY"
+			(at 28.956 40.894 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5432,6 +5450,24 @@
 			)
 		)
 		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(at 21.59 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "WEIDMULLER"
+			(at 21.59 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1455240000"
 			(at 21.59 55.88 0)
 			(effects
 				(font
@@ -6388,8 +6424,8 @@
 				)
 			)
 		)
-		(property "Value" "RJ45"
-			(at 83.82 40.64 0)
+		(property "Value" "RJ45C5 T1U 2.8N4N TY"
+			(at 79.248 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6415,6 +6451,24 @@
 			)
 		)
 		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(at 83.82 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Weidmuller"
+			(at 83.82 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1455240000"
 			(at 83.82 55.88 0)
 			(effects
 				(font
@@ -7765,7 +7819,7 @@
 		(dnp no)
 		(uuid "d8b4cb7e-2077-4bf4-9121-a9573d32f30d")
 		(property "Reference" "J108"
-			(at 85.344 32.004 0)
+			(at 109.474 41.656 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7773,8 +7827,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x03_Pin"
-			(at 87.122 35.052 0)
+		(property "Value" "B3B-PH-K-S"
+			(at 105.41 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7801,6 +7855,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 93.98 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "JST"
+			(at 93.98 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "B3B-PH-K-S"
 			(at 93.98 44.45 0)
 			(effects
 				(font
