@@ -3,7 +3,7 @@
 #include "Config.h"
 
 struct Frame {
-  uint8_t  vals[Config::N_MELDERS];
+  uint8_t  vals[Config::N_MELDERS + 1];
   uint16_t len;
   uint32_t id;
 };
@@ -11,7 +11,7 @@ struct Frame {
 class S88Bus {
 public:
   void begin();
-  void snapshot(Frame &dst);
+  bool snapshot(Frame &dst);
 
 private:
   static void onClockRise();

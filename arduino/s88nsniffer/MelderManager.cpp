@@ -1,7 +1,7 @@
 #include "MelderManager.h"
 
 void MelderManager::begin() {
-  for (uint16_t i = 0; i < Config::N_MELDERS; i++) {
+  for (uint16_t i = 1; i <= Config::N_MELDERS; i++) {
     melders[i] = {0,0,0,0,false};
   }
 }
@@ -9,14 +9,14 @@ void MelderManager::begin() {
 void MelderManager::printChange(uint16_t idx, uint8_t val, uint32_t tMs) {
   Serial.print('['); Serial.print(tMs); Serial.print(" ms] melder ");
   Serial.print(idx); Serial.print(" -> ");
-  Serial.println(val ? "X" : ".");
+  Serial.println(val ? "Bezet" : "Vrij");
 }
 
 void MelderManager::updateFromFrame(const Frame &f) {
   const uint32_t now = millis();
   const uint16_t maxN = (f.len > Config::N_MELDERS) ? Config::N_MELDERS : f.len;
 
-  for (uint16_t i = 0; i < Config::N_MELDERS; i++) {
+  for (uint16_t i = 1; i <=Config::N_MELDERS; i++) {
     uint8_t raw = (i < maxN) ? f.vals[i] : 0;
     Melder &m = melders[i];
 

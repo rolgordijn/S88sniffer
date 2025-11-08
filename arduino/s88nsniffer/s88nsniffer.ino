@@ -12,7 +12,7 @@ void setup() {
 
   Serial.begin(115200);
   while (!Serial) {}
-  
+
   Serial.println(F("S88 sniffer"));
 
   S88.begin();
@@ -24,15 +24,20 @@ void setup() {
 void loop() {
   static uint32_t lastId = 0;
   Frame cur;
+  
 
-  S88.snapshot(cur);
+  
+  if (S88.snapshot(cur)) {
 
-  if (cur.id != lastId) {
-    melders.updateFromFrame(cur);
-    relay1.update(melders);
-    relay2.update(melders);
-    lastId = cur.id;
+    if (cur.id != lastId) {
+      melders.updateFromFrame(cur);
+
+      //digitalWrite(A0, melders.state(13));
+      relay1.update(melders);
+      relay2.update(melders);
+      lastId = cur.id;
+    }
   }
 
-  delay(1);
+  
 }

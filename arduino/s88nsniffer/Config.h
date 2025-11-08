@@ -7,7 +7,7 @@ namespace Config {
   constexpr uint8_t DATA_PIN  = 4;
 
   constexpr uint16_t N_MELDERS = 40;
-  constexpr uint16_t DEBOUNCE_MS = 30;
+  constexpr uint16_t DEBOUNCE_MS = 500;
 
   constexpr uint8_t RELAY1_PIN   = A0;
   constexpr uint16_t RELAY1_SET  = 13;
