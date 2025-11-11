@@ -1,4 +1,5 @@
 #include "S88Bus.h"
+#include "InterruptGuard.h"
 
 static volatile Frame prevFrame = { {}, 0, 0};
 static volatile uint8_t workVals[Config::N_MELDERS + 1];
@@ -34,7 +35,7 @@ void S88Bus::begin() {
 }
 
 bool S88Bus::snapshot(Frame &dst) {
-  noInterrupts();
+  InterruptGuard interruptsDisabledInThisFunction;
 
   bool ret;
 
@@ -48,6 +49,6 @@ bool S88Bus::snapshot(Frame &dst) {
   } else {
     ret = false;
   }
-  interrupts();
+
   return ret;
 }
